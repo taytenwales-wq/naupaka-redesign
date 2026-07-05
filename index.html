@@ -75,8 +75,9 @@ h2.title{font-weight:700;font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margi
 .nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .45s var(--ease)}
 .nav-inner{max-width:var(--maxw);margin:0 auto;padding:18px clamp(20px,5vw,48px);display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:46px;width:46px;border-radius:50%;transition:height .4s var(--ease);box-shadow:0 0 0 2px rgba(255,255,255,.5)}
-.nav.scrolled .brand img{box-shadow:0 0 0 2px rgba(14,110,110,.18)}
+.brand img{height:48px;width:48px;border-radius:50%;background:#fff;padding:4px;object-fit:contain;box-shadow:0 3px 10px rgba(8,63,66,.22);transition:transform .4s var(--ease)}
+.brand:hover img{transform:rotate(-6deg) scale(1.05)}
+.nav.scrolled .brand img{box-shadow:0 2px 8px rgba(8,63,66,.14)}
 .brand .wordmark{font-family:'Quicksand';font-weight:700;font-size:1.5rem;color:#fff;letter-spacing:.02em;transition:color .4s}
 .nav-links{display:flex;align-items:center;gap:6px}
 .nav-links a{font-family:'Quicksand';font-weight:600;font-size:.98rem;color:#fff;padding:.5em .9em;border-radius:100px;transition:background .3s,color .3s;position:relative}
